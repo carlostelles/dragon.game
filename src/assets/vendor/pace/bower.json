@@ -1,0 +1,29 @@
+{
+  "name": "PACE",
+  "main": "pace.js",
+  "version": "1.0.2",
+  "keywords": [
+    "loading",
+    "load",
+    "pageload",
+    "progress",
+    "activity",
+    "ajax",
+    "spinner",
+    "progress",
+    "bar",
+    "automatic",
+    "client-side"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".*",
+    "Gruntfile.coffee",
+    "bower_components",
+    "docs",
+    "node_modules",
+    "package.json",
+    "templates",
+    "tests"
+  ]
+}

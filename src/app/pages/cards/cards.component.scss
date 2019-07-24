@@ -1,0 +1,44 @@
+.card {
+  .btn-floating {
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-title {
+    background: #00000078;
+    padding: 0 10px !important;
+    margin: 0 0 10px !important;
+  }
+
+  &-body {
+    a {
+      float: right;
+      padding-bottom: 5%;
+      text-decoration: underline;
+    }
+  }
+}
+
+.halfway-fab-duo {
+  right: 72px !important;
+}
+
+.btn-floating.custom-add-card {
+  position: absolute;
+  left: 92%;
+  bottom: -15vh;
+  border-radius: 25px;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  padding-top: .6rem;
+}
+
+@media (max-width: 576px) {
+  .btn-floating.custom-add-card {
+    left: 80% !important;
+    bottom: 0 !important;
+  }
+}

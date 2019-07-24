@@ -1,0 +1,50 @@
+/* You can detail global styles to this file, and also import other style files */
+/* You can detail global styles to this file, and also import other style files */
+
+/* @import url("assets/css/bootstrap.min.css"); */
+/* @import url("../src/assets/css/prism.min.css");
+@import url("../src/assets/css/sweetalert2.min.css");
+@import url("../src/assets/css/bootstrap-timepicker.min.css");
+@import url("../src/assets/css/wizard.css");
+@import url("../src/assets/css/leaflet.css");
+@import url("../src/assets/css/jquery-jvectormap-2.0.3.css");
+@import url("../src/assets/css/ng2-toastr.min.css");
+@import url("../src/assets/css/nouislider.min.css");
+@import url("../src/assets/css/data-table/index.css");
+@import url("../src/assets/css/data-table/icons.css");
+@import url("../src/assets/css/demo.css"); */
+.ngb-rating span {
+  font-size: 1.5rem;
+}
+
+/* For Star*/
+.star {
+  font-size: 1.5rem;
+  color: #b0c4de;
+}
+
+/* Filled Star*/
+.star.filled {
+  color: #FF8D60;
+}
+
+/* Full Star*/
+.star.full {
+  color: #FF586B;
+}
+
+/* Half Star*/
+.star .half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: #FF586B;
+  font-size: 2rem;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  color: #d3d3d3;
+}

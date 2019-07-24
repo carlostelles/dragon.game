@@ -1,0 +1,25 @@
+{
+  "name": "PACE",
+  "main": "pace.js",
+  "version": "1.0.2",
+  "license": "MIT",
+  "ignore": [
+    ".*",
+    "Gruntfile.coffee",
+    "bower_components",
+    "docs",
+    "node_modules",
+    "package.json",
+    "templates",
+    "tests"
+  ],
+  "_release": "1.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.2",
+    "commit": "c6846cbf6b928e9903b569269fa9fbf32f2554f4"
+  },
+  "_source": "https://github.com/HubSpot/pace.git",
+  "_target": "^1.0.2",
+  "_originalSource": "pace"
+}

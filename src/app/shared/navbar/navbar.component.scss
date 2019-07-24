@@ -1,0 +1,33 @@
+@media screen and (max-width: 576px) {
+  .logo-img {
+    width: 85% !important;
+    padding: 2%;
+  }
+
+  .navbar {
+    &-header {
+      width: 20% !important;
+      display: inline-block;
+    }
+
+    &-container {
+      width: 80%;
+      display: inline-block;
+      height: 5rem;
+    }
+  }
+}
+
+.logo-img {
+  width: 16%;
+
+  img {
+    width: 100%;
+  }
+}
+
+h4 {
+  padding: 9px 0 0 10px;
+  font-weight: bold;
+  color: #3B3B3B;
+}

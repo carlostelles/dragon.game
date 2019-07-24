@@ -1,0 +1,57 @@
+<app-full-layout>
+  <div class="row">
+    <div class="col-12">
+
+      <div class="col-lg-4 col-md-12 col-sm-12 float-left" *ngFor="let dragon of dragons">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-img">
+              <h4 class="card-title">{{dragon.name}}</h4>
+              <img class="card-img-top img-fluid"
+                   src="https://images-cdn.fantasyflightgames.com/filer_public/5d/9d/5d9d200e-9e31-4022-a71d-230ac5d037c2/gt34_preview1.png"
+                   [alt]="dragon.name">
+              <a class="btn btn-floating halfway-fab halfway-fab-duo bg-warning" title="Editar" [routerLink]="'/card/' + dragon.id + '/edit'">
+                <i class="fas fa-pencil-alt"></i>
+              </a>
+              <a class="btn btn-floating halfway-fab bg-danger" title="Excluir" (click)="onDelete(content, dragon)">
+                <i class="fas fa-trash"></i>
+              </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <ngb-rating [(rate)]="dragon.slug" [readonly]="true">
+                  <ng-template let-fill="fill">
+                    <span class="star" [class.filled]="fill === 100">&#9733;</span>
+                  </ng-template>
+                </ngb-rating>
+              </p>
+              <span>Adicionado em {{dragon.createdAt | date: 'dd/MM/yyyy'}}</span>
+              <a [routerLink]="'/card/' + dragon.id">Visualizar dragão</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <a class="btn btn-floating custom-add-card bg-primary" title="Novo" [routerLink]="'/edit'">
+    <i class="fas fa-plus"></i>
+  </a>
+
+  <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">Remover Dragão</h4>
+    </div>
+    <div class="modal-body">
+      <p>Certo de que desejas remover este registro?</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger btn-raised" (click)="c('Close click')">
+        <i class="fas fa-trash"></i> Excluir
+      </button>
+      <button type="button" class="btn btn-secondary btn-raised" (click)="d('Dismiss click')">Cancelar</button>
+    </div>
+  </ng-template>
+
+</app-full-layout>

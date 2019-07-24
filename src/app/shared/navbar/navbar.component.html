@@ -1,0 +1,32 @@
+<!-- Navbar (Header) Starts -->
+<nav class="header-navbar navbar navbar-expand-lg navbar-light bg-faded">
+    <div class="container-fluid">
+        <div class="navbar-header float-left">
+          <a [routerLink]="['/']" class="logo-text float-left">
+            <div class="logo-img float-left">
+              <img src="../../../assets/img/logos/logo-short.png"/>
+            </div>
+            <h4 class="float-left align-middle d-xs-none">DRAGON.GAME</h4>
+          </a>
+        </div>
+        <div class="navbar-container">
+            <div id="navbarSupportedContent">
+                <ul class="navbar-nav pt-xs-3">
+                    <li class="nav-item mr-2 d-xs-none">
+                        <a href="javascript:;" class="nav-link" id="navbar-fullscreen" appToggleFullscreen
+                           (click)="ToggleClass()">
+                            <i class="{{toggleClass}} font-medium-3 blue-grey darken-4"></i>
+                            <p class="d-none">fullscreen</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" (click)="onLogout()">
+                        <i class="ft-power mr-2"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar (Header) Ends -->

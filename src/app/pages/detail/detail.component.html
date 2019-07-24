@@ -1,0 +1,35 @@
+<app-full-layout>
+  <div class="row">
+    <div class="col-12">
+
+        <div class="card">
+          <div class="card-content">
+            <div class="card-img">
+              <h2 class="card-title">{{dragon.name}}</h2>
+              <img class="card-img-top img-fluid"
+                   src="https://images-cdn.fantasyflightgames.com/filer_public/5d/9d/5d9d200e-9e31-4022-a71d-230ac5d037c2/gt34_preview1.png"
+                   [alt]="dragon.name">
+            </div>
+            <div class="card-body">
+              <div class="card-body--header">
+                <p class="card-text float-left">
+                  <ngb-rating [(rate)]="dragon.slug" [readonly]="true">
+                    <ng-template let-fill="fill">
+                      <span class="star" [class.filled]="fill === 100">&#9733;</span>
+                    </ng-template>
+                  </ngb-rating>
+                </p>
+                <span class="float-right d-xs-none">Adicionado em {{dragon.createdAt | date: 'dd/MM/yyyy'}}</span>
+                <span class="d-xs-float-left display-inline-block mb-3">Adicionado em {{dragon.createdAt | date: 'dd/MM/yyyy'}}</span>
+              </div>
+              <h4>Histórias</h4>
+              <p class="card-text" *ngFor="let history of dragon.histories">{{history}}</p>
+            </div>
+            <button class="btn btn-outline- ml-3" [routerLink]="'/'">Voltar</button>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+</app-full-layout>
