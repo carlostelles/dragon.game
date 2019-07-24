@@ -91,6 +91,7 @@ export class EditComponent implements OnInit {
       .subscribe((data) => {
         this.dragon = data;
         this.toastrService.success('Show! Seu dragão foi registrado.')
+        this.router.navigate(['']);
       })
   }
 
